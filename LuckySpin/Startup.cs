@@ -16,12 +16,12 @@ namespace LuckySpin
         public void ConfigureServices(IServiceCollection services)
         {
             //TODO: enable the full MVC service
-            //services.AddMvc();
+            services.AddMvc();
             //TODO: (bonus) Register the TextTransformService class
             
             
         }
-
+        
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app)
         {
@@ -36,7 +36,7 @@ namespace LuckySpin
             });
 
             //TODO: Enable requests for static files, like CSS and images
-            //app.UseStaticFiles();
+            app.UseStaticFiles();
         }
     }
 }
